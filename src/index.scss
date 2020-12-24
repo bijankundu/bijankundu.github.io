@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  background: url("/so-white.png");
+  font-family: "Poppins", sans-serif;
+  color: #1b1c1d;
+  @apply h-full;
+}

@@ -1,0 +1,32 @@
+.navbar-wrapper {
+  @apply h-20 flex items-center;
+
+  .container {
+    @apply mx-auto flex justify-between items-center;
+
+    .name {
+      font-weight: 600;
+      @apply text-3xl tracking-widest;
+    }
+
+    .nav-items {
+      font-weight: 400;
+      @apply flex justify-around w-2/4 tracking-wide text-lg;
+
+      .item {
+        @apply flex items-center cursor-pointer;
+      }
+
+      .item:last-child {
+        background: linear-gradient(to right, #01cac7, #00a7c2);
+        background: -moz-linear-gradient(to right, #01cac7, #00a7c2);
+        font-weight: 500;
+        @apply px-6 py-2 text-white tracking-widest rounded-lg;
+      }
+
+      .item:last-child:hover {
+        background: #1d7e8e;
+      }
+    }
+  }
+}
