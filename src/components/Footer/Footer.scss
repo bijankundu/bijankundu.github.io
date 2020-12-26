@@ -1,0 +1,18 @@
+.footer {
+  background-color: #e5f5f5;
+  @apply text-center py-12 mt-12;
+  p:first-child {
+    @apply tracking-widest lg:block hidden;
+    span {
+      color: #00a09d;
+      font-weight: 600;
+    }
+  }
+  p:last-child {
+    @apply tracking-widest text-center lg:hidden block;
+    span {
+      color: #00a09d;
+      font-weight: 600;
+    }
+  }
+}

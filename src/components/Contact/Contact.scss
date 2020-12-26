@@ -1,0 +1,29 @@
+.contact-wrapper {
+  @apply container lg:mx-auto flex lg:mt-12 lg:p-0 px-4 lg:text-left text-center;
+  & > div {
+    @apply lg:w-1/2 w-full;
+  }
+  .left-container {
+    @apply flex flex-col justify-around;
+    h1 {
+      @apply lg:text-7xl text-4xl lg:my-0 my-4;
+      font-weight: 400;
+      span {
+        color: #00a09d;
+        font-weight: 600;
+      }
+    }
+    p {
+      @apply lg:flex hidden text-2xl w-10/12  text-gray-700;
+    }
+    h6 {
+      @apply lg:hidden flex w-full text-base mt-8 text-justify text-gray-700;
+    }
+    img {
+      @apply lg:hidden flex;
+    }
+  }
+  .right-container {
+    @apply lg:flex hidden;
+  }
+}

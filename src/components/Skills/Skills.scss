@@ -1,0 +1,44 @@
+.skill-wrapper {
+  @apply container lg:mx-auto px-4 lg:px-0;
+  h1 {
+    @apply lg:text-6xl text-4xl lg:text-left text-center;
+    font-weight: 400;
+    span {
+      color: #00a09d;
+      font-weight: 600;
+    }
+  }
+  .services {
+    @apply flex justify-around lg:mt-12 my-6 text-center lg:flex-row flex-col;
+    .service-card {
+      background: rgba(1, 200, 199, 0.3);
+      @apply flex flex-1 justify-around lg:mx-4 rounded-lg lg:my-0 my-2;
+      div {
+        @apply flex flex-col justify-evenly my-6;
+        img {
+          @apply h-20;
+        }
+        h2 {
+          font-weight: 600;
+          @apply text-lg tracking-wider;
+        }
+        p {
+          @apply mx-2;
+        }
+      }
+    }
+  }
+  h2 {
+    font-weight: 400;
+    @apply my-8 lg:text-lg text-base text-center;
+  }
+  .skills {
+    @apply flex flex-1 flex-wrap flex-grow-0 justify-evenly mb-6;
+    div {
+      @apply lg:m-0 m-2;
+      svg {
+        @apply lg:h-auto h-12 lg:w-auto w-12;
+      }
+    }
+  }
+}

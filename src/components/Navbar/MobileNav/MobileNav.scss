@@ -1,0 +1,56 @@
+nav {
+  @apply lg:hidden flex container mx-auto px-4 justify-start;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: #00a09d;
+    z-index: 5;
+  }
+  button {
+    z-index: 6;
+    outline: none;
+    border: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    &:focus {
+      outline: none;
+    }
+    svg {
+      height: inherit;
+      width: inherit;
+    }
+  }
+  h1 {
+    flex: 0 1 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    @apply justify-self-center absolute self-center text-xl w-auto;
+  }
+}
+
+ul {
+  top: 15%;
+  left: 10%;
+  @apply absolute z-50;
+  li {
+    @apply text-2xl py-3;
+    &:last-child {
+      font-weight: 600;
+      @apply tracking-widest;
+    }
+  }
+}
