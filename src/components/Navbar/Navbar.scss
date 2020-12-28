@@ -17,7 +17,7 @@
         @apply flex items-center cursor-pointer;
       }
 
-      .item:last-child {
+      button.item {
         background: linear-gradient(to right, #01cac7, #00a7c2);
         background: -moz-linear-gradient(to right, #01cac7, #00a7c2);
         font-weight: 500;

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const variants = {
   open: {
@@ -27,42 +28,58 @@ const liVariants = {
   },
 };
 
-export const Navigation = () => (
+export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants}>
-    <motion.li
-      variants={liVariants}
-      whileHover={{ scale: 1.3 }}
-      whileTap={{ scale: 0.5 }}
-    >
-      Home
-    </motion.li>
-    <motion.li
-      variants={liVariants}
-      whileHover={{ scale: 1.3 }}
-      whileTap={{ scale: 0.5 }}
-    >
-      Experience
-    </motion.li>
-    <motion.li
-      variants={liVariants}
-      whileHover={{ scale: 1.3 }}
-      whileTap={{ scale: 0.5 }}
-    >
-      Education
-    </motion.li>
-    <motion.li
-      variants={liVariants}
-      whileHover={{ scale: 1.3 }}
-      whileTap={{ scale: 0.5 }}
-    >
-      Works
-    </motion.li>
-    <motion.li
-      variants={liVariants}
-      whileHover={{ scale: 1.3 }}
-      whileTap={{ scale: 0.5 }}
-    >
-      HIRE
-    </motion.li>
+    <Link to="/">
+      <motion.li
+        variants={liVariants}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 0.5 }}
+        onClick={toggle}
+      >
+        Home
+      </motion.li>
+    </Link>
+    <Link to="/experience">
+      <motion.li
+        variants={liVariants}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 0.5 }}
+        onClick={toggle}
+      >
+        Experience
+      </motion.li>
+    </Link>
+    <Link to="/education">
+      <motion.li
+        variants={liVariants}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 0.5 }}
+        onClick={toggle}
+      >
+        Education
+      </motion.li>
+    </Link>
+    <Link to="/projects">
+      <motion.li
+        variants={liVariants}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 0.5 }}
+        onClick={toggle}
+      >
+        Works
+      </motion.li>
+    </Link>
+    <Link to="/contact">
+      <motion.li
+        variants={liVariants}
+        whileHover={{ scale: 1.3 }}
+        whileTap={{ scale: 0.5 }}
+        className="hire-mobile"
+        onClick={toggle}
+      >
+        HIRE
+      </motion.li>
+    </Link>
   </motion.ul>
 );

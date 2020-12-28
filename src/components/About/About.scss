@@ -1,6 +1,7 @@
 .about-wrapper {
   .about {
-    @apply container lg:mx-auto lg:px-0 px-5 flex;
+    margin-top: -6%;
+    @apply container  lg:mx-auto lg:px-0 px-5 flex;
 
     & > div {
       @apply lg:w-1/2 w-full lg:text-left text-center;
@@ -39,7 +40,7 @@
         }
       }
       p {
-        @apply text-gray-700 lg:mt-12 my-8 lg:text-xl text-sm lg:text-left text-justify lg:tracking-widest lg:leading-10;
+        @apply text-gray-700 dark:text-gray-400 lg:mt-12 my-8 lg:text-xl text-sm lg:text-left text-justify lg:tracking-widest lg:leading-10;
       }
     }
   }

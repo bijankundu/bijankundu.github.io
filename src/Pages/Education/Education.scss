@@ -1,0 +1,29 @@
+.education-wrapper {
+  @apply container mx-auto lg:px-0 px-4 flex flex-col justify-center mt-8;
+  .wrapper {
+    @apply flex justify-center;
+    .inner-wrapper {
+      background: rgba(1, 200, 199, 0.3);
+      @apply lg:w-2/3 w-full p-2 text-center;
+      h1 {
+        @apply font-semibold lg:text-2xl text-sm;
+      }
+
+      h1:not(:first-child) {
+        @apply lg:tracking-widest;
+      }
+
+      h6 {
+        @apply lg:tracking-widest lg:text-base text-sm;
+      }
+
+      p {
+        @apply lg:text-lg text-gray-700 text-base dark:text-gray-400;
+      }
+    }
+  }
+  .down-arrow {
+    color: #00a09d;
+    @apply flex justify-center;
+  }
+}

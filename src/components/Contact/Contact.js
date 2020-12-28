@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.scss";
 import Social from "./../Social/Social";
 
-const Contact = () => {
+const Contact = ({ theme, setTheme }) => {
   return (
     <div className="contact-wrapper">
       <div className="left-container">
@@ -17,7 +17,7 @@ const Contact = () => {
         <h6>
           Discuss a project or just want to say hi? My Inbox is open for all.
         </h6>
-        <Social />
+        <Social theme={theme} setTheme={setTheme} />
       </div>
       <div className="right-container">
         <img src="./images/contact.svg" alt="" />

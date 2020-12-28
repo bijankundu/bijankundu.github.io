@@ -19,22 +19,6 @@ const About = () => {
 
   const leftContainerVariants = {
     hidden: {
-      x: "-100vw",
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 1.5,
-        delay: 0.2,
-      },
-    },
-  };
-  const RightContainerVariants = {
-    hidden: {
       x: "100vw",
       opacity: 0,
     },
@@ -44,7 +28,23 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0.5,
-        duration: 1.5,
+        duration: 3,
+        delay: 0.2,
+      },
+    },
+  };
+  const RightContainerVariants = {
+    hidden: {
+      x: "-100vw",
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 3,
         delay: 0.2,
       },
     },
@@ -52,6 +52,7 @@ const About = () => {
 
   return (
     <div className="about-wrapper">
+      <img src="./images/projects.svg" alt="" />
       <div ref={ref} className="about">
         <motion.div
           initial="hidden"
@@ -76,11 +77,11 @@ const About = () => {
             <img src="./images/about me pic.jpeg" alt="" />
           </div>
           <p>
-            I was never the best at academics or sports, I’m just a super
-            curious guy. I usally like to share ideas and theories that interest
-            me. I spend a lot of time building software and try new things,
-            there’s so much more for me to learn. I sometimes document the
-            logic, reasoning, and problems encountered during the process of
+            I was never the best at academics or sports. I’m just a super
+            curious guy. I usually like to share ideas and theories that
+            interest me. I spend a lot of time building software and try new
+            things. There’s so much more for me to learn. I sometimes document
+            the logic, reasoning, and problems encountered during the process of
             learning. A combination of innovation and storytelling is what I
             aspire to do in my life.
           </p>

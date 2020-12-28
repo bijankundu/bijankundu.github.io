@@ -29,12 +29,12 @@
 
       p:not(:first-child) {
         font-weight: 400;
-        @apply w-full lg:w-3/5 text-gray-600 lg:mt-8 my-4 lg:text-lg text-sm;
+        @apply w-full lg:w-4/5 text-gray-600 dark:text-gray-300 lg:mt-8 my-4 lg:text-lg text-sm;
       }
 
       .buttons-div {
         color: #fff;
-        @apply flex mt-10 w-full lg:w-3/5 lg:justify-between justify-around text-xl flex-wrap;
+        @apply flex mt-10 w-full lg:w-4/5 lg:justify-between justify-around text-xl flex-wrap;
         button {
           -webkit-user-select: none;
           -moz-user-select: none;
@@ -44,15 +44,15 @@
             outline: none;
           }
         }
-        button:first-child {
+        button.contact {
           background-color: #00a09d;
           font-weight: 500;
-          @apply lg:p-4 md:h-16 h-14 lg:h-auto  px-6 lg:m-auto my-4 rounded-lg tracking-wider;
+          @apply lg:p-4 md:h-16 h-14 lg:h-auto  px-6 lg:my-auto my-4 rounded-lg tracking-wider;
         }
-        button:last-child {
+        button.resume {
           background-color: rgb(11, 45, 78);
           font-weight: 500;
-          @apply lg:p-4 md:h-16 h-14 lg:h-auto px-6 lg:m-auto my-4 rounded-lg tracking-wider;
+          @apply lg:p-4 md:h-16 h-14 lg:h-auto px-6 lg:my-auto my-4 rounded-lg tracking-wider;
         }
       }
     }

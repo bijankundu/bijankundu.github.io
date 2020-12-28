@@ -3,8 +3,9 @@ import "./Landing.scss";
 import Social from "./../Social/Social";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
-const LandingPage = () => {
+const LandingPage = ({ theme, setTheme }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -69,9 +70,9 @@ const LandingPage = () => {
             Hey, I'm <span>Bijan</span>
           </p>
           <p>
-            A passionate developer 🚀 having an experience of building Web &
-            Mobile with JavaScript / Reactjs / Nodejs and some other cool
-            libraries and frameworks.
+            A passionate developer 🚀 having experience of building Web & Mobile
+            with JavaScript / Reactjs / Nodejs and some other cool libraries and
+            frameworks.
           </p>
           <motion.div
             variants={RightContainerVariants}
@@ -81,19 +82,23 @@ const LandingPage = () => {
           >
             <img src="./images/mobile-landing.svg" alt="" />
           </motion.div>
-          <Social />
+          <Social theme={theme} setTheme={setTheme} />
           <div className="buttons-div">
+            <Link to="/contact">
+              <motion.button
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+                className="contact"
+              >
+                Contact Me
+              </motion.button>
+            </Link>
             <motion.button
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-            >
-              Contact Me
-            </motion.button>
-            <motion.button
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
+              className="resume"
             >
               See my Resume
             </motion.button>

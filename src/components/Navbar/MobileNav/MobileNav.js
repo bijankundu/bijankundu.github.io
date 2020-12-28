@@ -32,7 +32,7 @@ const MobileNav = () => {
       <motion.div initial={false} animate={isOpen ? "open" : "closed"}>
         <motion.div className="background" custom={height} variants={sidebar} />
         <MenuToggle toggle={() => toggleOpen()} />
-        <Navigation />
+        <Navigation toggle={() => toggleOpen()} />
       </motion.div>
       <h1>Bijan Kundu</h1>
     </nav>

@@ -3,10 +3,8 @@
     @apply container lg:mx-auto lg:p-0 px-4;
 
     & > h1 {
-      @apply lg:text-6xl text-3xl lg:text-left text-center;
+      @apply lg:text-6xl lg:mt-12 pt-6 lg:pt-0 text-3xl lg:text-left text-center;
       font-weight: 400;
-      margin-top: -5%;
-
       span {
         color: #00a09d;
         font-weight: 600;
@@ -16,7 +14,7 @@
       @apply flex justify-between mt-10 flex-wrap;
       .card {
         background: rgba(1, 200, 199, 0.3);
-        @apply flex text-center rounded-lg m-2 w-80 cursor-pointer;
+        @apply flex text-center rounded-lg m-2 w-80 cursor-pointer justify-center;
         & > div {
           @apply flex flex-col justify-around p-4;
           & > * {
@@ -25,8 +23,7 @@
 
           h1 {
             font-weight: 600;
-            color: #0b2d4e;
-            @apply tracking-widest text-2xl;
+            @apply tracking-widest text-2xl text-blue-900 dark:text-blue-600;
           }
         }
       }
@@ -37,16 +34,6 @@
         background-color: rgb(11, 45, 78);
         font-weight: 500;
         @apply text-white lg:px-8 lg:py-4 py-2 rounded-lg lg:tracking-widest text-xl flex items-center lg:w-auto w-full justify-center;
-      }
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .projects-wrapper {
-    .projects {
-      & > h1 {
-        margin-top: 0;
       }
     }
   }

@@ -1,7 +1,7 @@
 .skill-wrapper {
-  @apply container lg:mx-auto px-4 lg:px-0;
+  @apply container lg:mx-auto px-4 lg:px-0 mt-0 lg:mt-20;
   h1 {
-    @apply lg:text-6xl text-4xl lg:text-left text-center;
+    @apply lg:text-6xl text-4xl pt-6 lg:pt-0 lg:text-left text-center;
     font-weight: 400;
     span {
       color: #00a09d;

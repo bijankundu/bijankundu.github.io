@@ -1,0 +1,29 @@
+.experience-wrapper {
+  @apply container lg:mx-auto lg:px-0 px-4;
+  h1 {
+    color: #00a09d;
+    @apply lg:text-4xl text-2xl underline lg:text-left text-center uppercase font-semibold;
+  }
+
+  .intern {
+    @apply my-6 leading-10;
+    h4 {
+      @apply font-semibold lg:text-2xl text-lg tracking-widest;
+    }
+    div {
+      h5 {
+        background: rgba(1, 200, 199, 0.3);
+        @apply inline-block px-2 py-1 lg:text-base text-sm;
+      }
+    }
+    p {
+      @apply text-xs lg:text-sm font-medium;
+    }
+    ul {
+      @apply lg:my-0 my-4 lg:text-xl text-base font-light lg:ml-0 ml-2;
+      li {
+        @apply list-outside list-disc lg:leading-10 leading-normal;
+      }
+    }
+  }
+}

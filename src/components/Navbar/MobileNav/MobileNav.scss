@@ -40,17 +40,17 @@ nav {
     font-weight: 600;
     @apply justify-self-center absolute self-center text-xl w-auto;
   }
-}
 
-ul {
-  top: 15%;
-  left: 10%;
-  @apply absolute z-50;
-  li {
-    @apply text-2xl py-3;
-    &:last-child {
-      font-weight: 600;
-      @apply tracking-widest;
+  ul {
+    top: 15%;
+    left: 10%;
+    @apply absolute z-50;
+    li {
+      @apply text-2xl py-3;
+      &.hire-mobile {
+        font-weight: 600;
+        @apply tracking-widest;
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav/MobileNav";
 
 const Navbar = () => {
@@ -41,48 +42,59 @@ const Navbar = () => {
         animate="visible"
         variants={navBarVariant}
       >
-        <div className="name">Bijan Kundu</div>
+        <Link to="/" className="name">
+          <div>Bijan Kundu</div>
+        </Link>
         <div className="nav-items">
-          <motion.div
-            initial="initial"
-            variants={navItemsVariant}
-            whileHover="hover"
-            className="item"
-          >
-            Home
-          </motion.div>
-          <motion.div
-            initial="initial"
-            variants={navItemsVariant}
-            whileHover="hover"
-            className="item"
-          >
-            Experience
-          </motion.div>
-          <motion.div
-            initial="initial"
-            variants={navItemsVariant}
-            whileHover="hover"
-            className="item"
-          >
-            Education
-          </motion.div>
-          <motion.div
-            initial="initial"
-            variants={navItemsVariant}
-            whileHover="hover"
-            className="item"
-          >
-            Works
-          </motion.div>
-          <motion.button
-            initial="initial"
-            variants={navItemsVariant}
-            whileHover="button"
-            className="item"
-          >
-            HIRE
-          </motion.button>
+          <Link to="/" className="item">
+            <motion.div
+              initial="initial"
+              variants={navItemsVariant}
+              whileHover="hover"
+            >
+              Home
+            </motion.div>
+          </Link>
+          <Link to="/experience" className="item">
+            <motion.div
+              initial="initial"
+              variants={navItemsVariant}
+              whileHover="hover"
+              className="item"
+            >
+              Experience
+            </motion.div>
+          </Link>
+          <Link to="/education" className="item">
+            <motion.div
+              initial="initial"
+              variants={navItemsVariant}
+              whileHover="hover"
+              className="item"
+            >
+              Education
+            </motion.div>
+          </Link>
+          <Link to="/projects" className="item">
+            <motion.div
+              initial="initial"
+              variants={navItemsVariant}
+              whileHover="hover"
+              className="item"
+            >
+              Works
+            </motion.div>
+          </Link>
+          <Link to="/contact" className="item">
+            <motion.button
+              initial="initial"
+              variants={navItemsVariant}
+              whileHover="button"
+              className="item"
+            >
+              HIRE
+            </motion.button>
+          </Link>
         </div>
       </motion.div>
       <MobileNav />

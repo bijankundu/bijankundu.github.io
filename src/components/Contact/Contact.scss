@@ -1,5 +1,5 @@
 .contact-wrapper {
-  @apply container lg:mx-auto flex lg:mt-12 lg:p-0 px-4 lg:text-left text-center;
+  @apply container lg:mx-auto flex lg:mt-0 mt-12 lg:p-0 px-4 lg:text-left text-center;
   & > div {
     @apply lg:w-1/2 w-full;
   }
@@ -14,10 +14,10 @@
       }
     }
     p {
-      @apply lg:flex hidden text-2xl w-10/12  text-gray-700;
+      @apply lg:flex hidden text-2xl w-10/12  text-gray-700 dark:text-gray-400;
     }
     h6 {
-      @apply lg:hidden flex w-full text-base mt-8 text-justify text-gray-700;
+      @apply lg:hidden flex w-full text-base mt-8 text-justify text-gray-700 dark:text-gray-400;
     }
     img {
       @apply lg:hidden flex;

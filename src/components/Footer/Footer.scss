@@ -1,17 +1,16 @@
 .footer {
-  background-color: #e5f5f5;
-  @apply text-center py-12 mt-12;
+  @apply text-center py-12 mt-12 bg-green-200 dark:bg-green-900;
   p:first-child {
     @apply tracking-widest lg:block hidden;
     span {
-      color: #00a09d;
+      @apply text-blue-900 dark:text-blue-500;
       font-weight: 600;
     }
   }
   p:last-child {
     @apply tracking-widest text-center lg:hidden block;
     span {
-      color: #00a09d;
+      @apply text-blue-900 dark:text-blue-500;
       font-weight: 600;
     }
   }

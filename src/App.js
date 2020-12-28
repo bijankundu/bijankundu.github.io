@@ -1,23 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Landing from "./components/Landing/Landing";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
+import Top from "./components/utilityButtons/Top/Top";
+import Dark from "./components/utilityButtons/Dark/Dark";
+import Home from "./Pages/Home";
+import Experience from "./Pages/Experience/Experience";
+import Projects from "./Pages/Projects/Projects";
+import Education from "./Pages/Education/Education";
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
+  useEffect(() => {
+    const temp = localStorage.theme ? localStorage.theme : "";
+    setTheme(temp);
+    if (theme === "") localStorage.setItem("theme", "light");
+    else if (localStorage.theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [theme]);
   return (
-    <>
+    <div className={theme === "light" ? "bg-pattern" : "bg-honey"}>
+      <Top />
+      <Dark theme={theme} setTheme={setTheme} />
       <Navbar />
-      <Landing />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Switch>
+        <Route path="/" exact>
+          <Home theme={theme} setTheme={setTheme} />
+        </Route>
+        <Route path="/contact" exact>
+          <Contact theme={theme} setTheme={setTheme} />
+        </Route>
+        <Route path="/experience" exact component={Experience} />
+        <Route path="/projects" exact>
+          <Projects landing={false} />
+        </Route>
+        <Route path="/education" exact component={Education} />
+      </Switch>
       <Footer />
-    </>
+    </div>
   );
 };
 
