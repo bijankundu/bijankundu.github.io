@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.21c22ded.chunk.css",
-    "main.js": "/static/js/main.46b8e935.chunk.js",
-    "main.js.map": "/static/js/main.46b8e935.chunk.js.map",
+    "main.css": "/static/css/main.6c287dfc.chunk.css",
+    "main.js": "/static/js/main.e21a0f9f.chunk.js",
+    "main.js.map": "/static/js/main.e21a0f9f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
-    "static/js/2.fa2c59c4.chunk.js": "/static/js/2.fa2c59c4.chunk.js",
-    "static/js/2.fa2c59c4.chunk.js.map": "/static/js/2.fa2c59c4.chunk.js.map",
+    "static/js/2.a81d0f2d.chunk.js": "/static/js/2.a81d0f2d.chunk.js",
+    "static/js/2.a81d0f2d.chunk.js.map": "/static/js/2.a81d0f2d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.21c22ded.chunk.css.map": "/static/css/main.21c22ded.chunk.css.map",
-    "static/js/2.fa2c59c4.chunk.js.LICENSE.txt": "/static/js/2.fa2c59c4.chunk.js.LICENSE.txt"
+    "static/css/main.6c287dfc.chunk.css.map": "/static/css/main.6c287dfc.chunk.css.map",
+    "static/js/2.a81d0f2d.chunk.js.LICENSE.txt": "/static/js/2.a81d0f2d.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/dark-honeycomb.b591ad61.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
-    "static/js/2.fa2c59c4.chunk.js",
-    "static/css/main.21c22ded.chunk.css",
-    "static/js/main.46b8e935.chunk.js"
+    "static/js/2.a81d0f2d.chunk.js",
+    "static/css/main.6c287dfc.chunk.css",
+    "static/js/main.e21a0f9f.chunk.js"
   ]
 }
