@@ -49,10 +49,10 @@
           font-weight: 500;
           @apply lg:p-4 md:h-16 h-14 lg:h-auto  px-6 lg:my-auto my-4 rounded-lg tracking-wider;
         }
-        button.resume {
+        div.resume {
           background-color: rgb(11, 45, 78);
           font-weight: 500;
-          @apply lg:p-4 md:h-16 h-14 lg:h-auto px-6 lg:my-auto my-4 rounded-lg tracking-wider;
+          @apply lg:p-4 md:h-16 h-14 lg:h-auto px-6 lg:my-auto my-4 rounded-lg tracking-wider flex items-center;
         }
       }
     }

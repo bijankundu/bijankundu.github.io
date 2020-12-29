@@ -14,7 +14,7 @@ export const itemsArr = [
     id: 2,
     name: "Budget Guru",
     desc: "An expense tracking app to manage all your expenses.",
-    link: "https://bijankundu.github.io/Budget-Guru/",
+    link: "https://bijankundu.me/Budget-Guru/",
     details:
       "An expense tracking app to manage your hard-earned money and helps you in saving money and spend responsibly.",
     tech: ["HTML", "CSS", "JS", "jQuery"],
@@ -58,7 +58,7 @@ export const itemsArr = [
     id: 6,
     name: "Fiber",
     desc: "A fictional website for comparing broadband deals.",
-    link: "https://bijankundu.github.io/fiber/",
+    link: "https://bijankundu.me/fiber/",
     details: "",
     tech: ["HTML", "CSS", "JS"],
     photo:
@@ -68,7 +68,7 @@ export const itemsArr = [
     id: 7,
     name: "Tindog",
     desc: "A frictional website of a dating app for pets.",
-    link: "https://bijankundu.github.io/tindog/",
+    link: "https://bijankundu.me/tindog/",
     details: "",
     tech: ["HTML", "CSS", "JS", "Bootstrap"],
     photo:
@@ -121,7 +121,7 @@ export const itemsArr = [
     id: 12,
     name: "Simon Game",
     desc: "Simon is an electronic game of memory skill.",
-    link: "https://bijankundu.github.io/Simon-Game/",
+    link: "https://bijankundu.me/Simon-Game/",
     tech: ["HTML", "CSS", "JS", "jQuery"],
     details: "",
     photo:

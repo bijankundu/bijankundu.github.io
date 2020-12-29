@@ -28,8 +28,8 @@ const liVariants = {
   },
 };
 
-export const Navigation = ({ toggle }) => (
-  <motion.ul variants={variants}>
+export const Navigation = ({ toggle, isOpen }) => (
+  <motion.ul variants={variants} className={isOpen ? "block" : "hidden"}>
     <Link to="/">
       <motion.li
         variants={liVariants}

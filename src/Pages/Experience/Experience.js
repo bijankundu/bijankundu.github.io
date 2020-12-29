@@ -16,7 +16,7 @@ const Experience = () => {
           </p>
           <ul>
             <li>
-              Developed a web application for resturant order management using
+              Developed a web application for restaurant order management using
               ReactJs.
             </li>
           </ul>

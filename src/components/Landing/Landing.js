@@ -94,14 +94,20 @@ const LandingPage = ({ theme, setTheme }) => {
                 Contact Me
               </motion.button>
             </Link>
-            <motion.button
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
-              className="resume"
+            <a
+              href="https://drive.google.com/file/d/1Hd5B-4eMYc1hg-f5Dgg80-WTNpUiYxdB/view?usp=sharing"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              See my Resume
-            </motion.button>
+              <motion.div
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+                className="resume"
+              >
+                <h5>See my Resume</h5>
+              </motion.div>
+            </a>
           </div>
         </motion.div>
         <motion.div
