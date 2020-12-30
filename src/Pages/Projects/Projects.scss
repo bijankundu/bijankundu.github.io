@@ -14,7 +14,7 @@
       @apply flex justify-between mt-10 flex-wrap;
       .card {
         background: rgba(1, 200, 199, 0.3);
-        @apply flex text-center rounded-lg m-2 w-80 cursor-pointer justify-center;
+        @apply flex text-center rounded-lg m-2 lg:w-80 cursor-pointer justify-center;
         & > div {
           @apply flex flex-col justify-around p-4;
           & > * {

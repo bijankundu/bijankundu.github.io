@@ -95,7 +95,7 @@ const LandingPage = ({ theme, setTheme }) => {
               </motion.button>
             </Link>
             <a
-              href="https://drive.google.com/file/d/1Hd5B-4eMYc1hg-f5Dgg80-WTNpUiYxdB/view?usp=sharing"
+              href="https://bit.ly/bijancv"
               rel="noopener noreferrer"
               target="_blank"
             >
