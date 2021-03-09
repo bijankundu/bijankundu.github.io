@@ -24,14 +24,17 @@ const Experience = () => {
         <div className="intern">
           <h4>TRAINEE INTERN</h4>
           <div>
-            <h5>Nov 2020 - Present</h5>
+            <h5>Nov 2020 - Jan 2021</h5>
           </div>
           <p>
             <em>Ardent Computech Pvt. Ltd.,Kolkata ,India</em>
           </p>
           <ul>
             <li>
-              Learning to build hybrid mobile application using React Native.
+              Learned to build hybrid mobile application using React Native.
+            </li>
+            <li>
+              Developed a picture sharing and chatting app using React Rative.
             </li>
           </ul>
         </div>

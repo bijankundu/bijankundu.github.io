@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Projects.scss";
 import { FaArrowRight } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import ProjectCard from "./../../components/ProjectCard/ProjectCard";
 import { itemsArr } from "../../data";
@@ -63,19 +64,21 @@ const Projects = ({ landing }) => {
         </div>
         {landing && (
           <div className="all-projects">
-            <motion.button
-              initial={{ x: 0, scale: 1 }}
-              whileHover={{
-                x: [20, -20],
-                scale: 1.2,
-                transition: { x: { yoyo: Infinity } },
-              }}
-              whileTap={{
-                scale: 0.7,
-              }}
-            >
-              VIEW ALL THE PROJECTS <FaArrowRight />
-            </motion.button>
+            <Link to="/projects">
+              <motion.button
+                initial={{ x: 0, scale: 1 }}
+                whileHover={{
+                  x: [20, -20],
+                  scale: 1.2,
+                  transition: { x: { yoyo: Infinity } },
+                }}
+                whileTap={{
+                  scale: 0.7,
+                }}
+              >
+                VIEW ALL THE PROJECTS <FaArrowRight />
+              </motion.button>
+            </Link>
           </div>
         )}
       </div>

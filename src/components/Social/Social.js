@@ -74,7 +74,7 @@ const Social = ({ theme, setTheme }) => {
       <a
         rel="noopener noreferrer"
         target="_blank"
-        href="http://wa.me/+919093426094"
+        href="http://wa.me/+917908193869"
       >
         <motion.div
           variants={socialVariants}
