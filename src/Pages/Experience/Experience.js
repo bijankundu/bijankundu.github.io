@@ -7,6 +7,21 @@ const Experience = () => {
       <div className="internships">
         <h1>Internships</h1>
         <div className="intern">
+          <h4>WEB DEVELOPER INTERN</h4>
+          <div>
+            <h5>Jul 2021 - Present</h5>
+          </div>
+          <p>
+            <em>MinDWebs Ventures, Kolkata, West Bengal, India</em>
+          </p>
+          <ul>
+            <li>
+              Responsible for developing various UI screens for frontend and also
+              integrating APIs.
+            </li>
+          </ul>
+        </div>
+        <div className="intern">
           <h4>FRONTEND DEVELOPMENT INTERN</h4>
           <div>
             <h5>1 Nov - 30 Nov</h5>
