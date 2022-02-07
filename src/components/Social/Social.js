@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./Social.scss";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { motion } from "framer-motion";
+import ReactTooltip from "react-tooltip";
 
-const Social = ({ theme, setTheme }) => {
+const Social = ({ theme, location = "top" }) => {
   useEffect(() => {}, [theme]);
 
   const socialVariants = {
@@ -26,81 +26,29 @@ const Social = ({ theme, setTheme }) => {
 
   return (
     <div className="social-icons">
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://github.com/bijankundu/"
-      >
-        <motion.div
-          variants={socialVariants}
-          initial="initial"
-          whileHover="hover"
-          whileTap="tap"
-          className="icons"
-        >
+      <ReactTooltip />
+      <a rel="noopener noreferrer" target="_blank" href="https://github.com/bijankundu/" data-tip="Github">
+        <motion.div variants={socialVariants} initial="initial" whileHover="hover" whileTap="tap" className="icons">
           <FaGithub size={50} color={theme === "light" ? "#1b1c1d" : "#fff"} />
         </motion.div>
       </a>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.linkedin.com/in/bijankundu/"
-      >
-        <motion.div
-          variants={socialVariants}
-          initial="initial"
-          whileHover="hover"
-          whileTap="tap"
-          className="icons"
-        >
+      <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bijankundu/" data-tip="LinkedIn">
+        <motion.div variants={socialVariants} initial="initial" whileHover="hover" whileTap="tap" className="icons">
           <FaLinkedin size={50} color="#0e76a8" />
         </motion.div>
       </a>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="mailto:bijankundu025@gmail.com"
-      >
-        <motion.div
-          variants={socialVariants}
-          initial="initial"
-          whileHover="hover"
-          whileTap="tap"
-          className="icons"
-        >
+      <a rel="noopener noreferrer" target="_blank" href="mailto:bijankundu025@gmail.com" data-tip="Email">
+        <motion.div variants={socialVariants} initial="initial" whileHover="hover" whileTap="tap" className="icons">
           <FcGoogle size={50} />
         </motion.div>
       </a>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="http://wa.me/+917908193869"
-      >
-        <motion.div
-          variants={socialVariants}
-          initial="initial"
-          whileHover="hover"
-          whileTap="tap"
-          className="icons"
-        >
-          <IoLogoWhatsapp size={50} color="#2db842" />
-        </motion.div>
-      </a>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.facebook.com/bijan000/"
-      >
-        <motion.div
-          variants={socialVariants}
-          initial="initial"
-          whileHover="hover"
-          whileTap="tap"
-          className="icons"
-        >
-          <FaFacebook size={50} color="#3b5998" />
-        </motion.div>
-      </a>
+      {location !== "contact" && (
+        <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/bijan000/" data-tip="Stackoverflow">
+          <motion.div variants={socialVariants} initial="initial" whileHover="hover" whileTap="tap" className="icons">
+            <FaStackOverflow size={50} color="#f48024" />
+          </motion.div>
+        </a>
+      )}
     </div>
   );
 };

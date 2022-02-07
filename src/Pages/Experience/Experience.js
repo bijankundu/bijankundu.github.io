@@ -7,32 +7,43 @@ const Experience = () => {
       <div className="internships">
         <h1>Internships</h1>
         <div className="intern">
-          <h4>WEB DEVELOPER INTERN</h4>
+          <h4>FRONTEND INTERN</h4>
           <div>
-            <h5>Jul 2021 - Present</h5>
+            <h5>Nov 2021 - present</h5>
           </div>
           <p>
-            <em>MinDWebs Ventures, Kolkata, West Bengal, India</em>
+            <em>
+              <a href="https://www.deefy.co/" target={"_blank"} rel="noreferrer">
+                Deefy
+              </a>
+              , Lucknow, Uttar Pradesh, India
+            </em>
           </p>
           <ul>
             <li>
-              Responsible for developing various UI screens for frontend and also
-              integrating APIs.
+              Worked on browser extension which helps people with posting feedback in form of voice notes ( currently
+              under testing ).
             </li>
+            <li>Working on a project that provides p2p loans using NFTs as collateral.</li>
           </ul>
         </div>
         <div className="intern">
-          <h4>FRONTEND DEVELOPMENT INTERN</h4>
+          <h4>WEB DEVELOPER INTERN</h4>
           <div>
-            <h5>1 Nov - 30 Nov</h5>
+            <h5>Jul 2021 - Oct 2021</h5>
           </div>
           <p>
-            <em>Pantree By Thomson, Kochi, Kerala, India</em>
+            <em>
+              <a href="https://mindwebs.org/" target={"_blank"} rel="noreferrer">
+                MinDWebs Ventures
+              </a>{" "}
+              , Kolkata, West Bengal, India
+            </em>
           </p>
           <ul>
+            <li>Responsible for developing various UI screens for frontend and also integrating APIs.</li>
             <li>
-              Developed a web application for restaurant order management using
-              ReactJs.
+              Worked on developing a project to assist educational institutes to organise things in much simpler manner.
             </li>
           </ul>
         </div>
@@ -45,12 +56,20 @@ const Experience = () => {
             <em>Ardent Computech Pvt. Ltd.,Kolkata ,India</em>
           </p>
           <ul>
-            <li>
-              Learned to build hybrid mobile application using React Native.
-            </li>
-            <li>
-              Developed a picture sharing and chatting app using React Rative.
-            </li>
+            <li>Learned to build hybrid mobile application using React Native.</li>
+            <li>Developed a picture sharing and chatting app using React Rative.</li>
+          </ul>
+        </div>
+        <div className="intern">
+          <h4>FRONTEND DEVELOPMENT INTERN</h4>
+          <div>
+            <h5>1 Nov - 30 Nov</h5>
+          </div>
+          <p>
+            <em>Pantree By Thomson, Kochi, Kerala, India</em>
+          </p>
+          <ul>
+            <li>Developed a web application for restaurant order management using ReactJs.</li>
           </ul>
         </div>
       </div>

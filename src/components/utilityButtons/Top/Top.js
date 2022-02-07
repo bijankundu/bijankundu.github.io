@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import ReactTooltip from "react-tooltip";
+
 import "./Top.scss";
 
 const Top = () => {
@@ -19,11 +21,14 @@ const Top = () => {
   return (
     <>
       {showScroll && (
-        <button className="back-button" onClick={scrollTop}>
-          <div>
-            <FaArrowUp color="#ffffff" />
-          </div>
-        </button>
+        <>
+          <ReactTooltip />
+          <button className="back-button" onClick={scrollTop} data-tip="Scroll to top">
+            <div>
+              <FaArrowUp color="#ffffff" />
+            </div>
+          </button>
+        </>
       )}
     </>
   );

@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import ReactTooltip from "react-tooltip";
+
 import "./Dark.scss";
 
 const Dark = ({ theme, setTheme }) => {
@@ -16,20 +18,18 @@ const Dark = ({ theme, setTheme }) => {
   };
 
   return (
-    <button
-      className="dark-button"
-      onClick={() => {
-        handleClick();
-      }}
-    >
-      <div>
-        {theme === "light" ? (
-          <FaSun color="#ffffff" />
-        ) : (
-          <FaMoon color="#ffffff" />
-        )}
-      </div>
-    </button>
+    <>
+      <ReactTooltip />
+      <button
+        className="dark-button"
+        data-tip={`Turn ${theme === "light" ? "off" : "on"} the lights`}
+        onClick={() => {
+          handleClick();
+        }}
+      >
+        <div>{theme === "light" ? <FaSun color="#ffffff" /> : <FaMoon color="#ffffff" />}</div>
+      </button>
+    </>
   );
 };
 
